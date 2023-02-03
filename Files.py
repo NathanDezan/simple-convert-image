@@ -24,9 +24,8 @@ class Files:
 
         try:
             name_dir = "new"
-
         
-            if os.path.exists(self.path):
+            if os.path.exists(f"{self.path}/{name_dir}"):
                 message = "Directory already exists"
                 return True, message, name_method
             else:
